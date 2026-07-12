@@ -1,0 +1,134 @@
+# ============================================================
+# KiCad - Temporary, backup and local configuration files
+# ============================================================
+
+# KiCad backup directories
+*-backups/
+*-backup/
+.history/
+
+# Backup files
+*.bak
+*.bck
+*.kicad_pcb-bak
+*.kicad_sch-bak
+*.sch-bak
+*.brd-bak
+
+# Autosave and temporary files
+_autosave-*
+*~
+*.tmp
+*.temp
+*.000
+
+# KiCad lock files
+~*.lck
+*.lck
+
+# Local KiCad project preferences
+*.kicad_prl
+
+# Legacy/generated cache files
+fp-info-cache
+
+# Saved intermediate files
+*-save.pro
+*-save.kicad_pcb
+*-save.kicad_sch
+
+
+# ============================================================
+# Manufacturing outputs generated from KiCad
+# Ignore these if manufacturing files will be published only
+# through GitHub Releases or versioned ZIP packages.
+# ============================================================
+
+manufacturing/gerbers/*
+manufacturing/drill/*
+manufacturing/bom/*
+manufacturing/pick-and-place/*
+manufacturing/assembly/*
+
+# Keep directory structure in Git
+!manufacturing/gerbers/.gitkeep
+!manufacturing/drill/.gitkeep
+!manufacturing/bom/.gitkeep
+!manufacturing/pick-and-place/.gitkeep
+!manufacturing/assembly/.gitkeep
+
+
+# ============================================================
+# Generic generated fabrication files outside manufacturing/
+# ============================================================
+
+*.gbr
+*.ger
+*.gtl
+*.gbl
+*.gts
+*.gbs
+*.gto
+*.gbo
+*.gtp
+*.gbp
+*.gm1
+*.drl
+*.xln
+*.pos
+*.rpt
+
+
+# ============================================================
+# Firmware generated files
+# Adjust according to PlatformIO, ESP-IDF or Arduino
+# ============================================================
+
+# PlatformIO
+firmware/.pio/
+firmware/.vscode/.browse.c_cpp.db*
+firmware/.vscode/ipch/
+
+# ESP-IDF / CMake
+firmware/build/
+firmware/sdkconfig.old
+firmware/CMakeFiles/
+firmware/CMakeCache.txt
+firmware/cmake_install.cmake
+firmware/compile_commands.json
+
+# Generic compiled files
+*.o
+*.obj
+*.elf
+*.bin
+*.hex
+*.map
+*.a
+*.lib
+
+
+# ============================================================
+# Mechanical/CAD generated files
+# ============================================================
+
+# Temporary CAD files
+*.FCStd1
+*.autosave
+
+
+# ============================================================
+# Windows and development tools
+# ============================================================
+
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+
+# IDE files
+.idea/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
