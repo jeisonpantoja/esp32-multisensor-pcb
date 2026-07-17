@@ -7,6 +7,9 @@
 *-backup/
 .history/
 
+# KiCad automatic restore backups
+_restore_backup_*/
+
 # Backup files
 *.bak
 *.bck
@@ -131,4 +134,4 @@ $RECYCLE.BIN/
 *.user
 *.suo
 *.userosscache
-*.sln.docstates
+*.sln.docstates_restore_backup_*/
