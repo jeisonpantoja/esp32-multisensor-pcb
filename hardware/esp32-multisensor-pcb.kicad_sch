@@ -3509,7 +3509,7 @@
 	)
 	(text "Power LED\n"
 		(exclude_from_sim no)
-		(at 202.438 114.046 0)
+		(at 236.22 116.332 0)
 		(effects
 			(font
 				(size 2.54 2.54)
@@ -3670,6 +3670,16 @@
 	(no_connect
 		(at 78.74 62.23)
 		(uuid "f6322574-9fe1-4633-b21e-500a8ba5bbeb")
+	)
+	(wire
+		(pts
+			(xy 179.07 127) (xy 181.61 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "02ee7ec3-77a0-49fc-ace2-1b8f11c3cbfb")
 	)
 	(wire
 		(pts
@@ -4104,6 +4114,16 @@
 	)
 	(wire
 		(pts
+			(xy 179.07 121.92) (xy 181.61 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6bd568fe-1c26-45b7-b02c-61f6ff16e3e5")
+	)
+	(wire
+		(pts
 			(xy 229.87 57.15) (xy 229.87 52.07)
 		)
 		(stroke
@@ -4162,6 +4182,16 @@
 			(color 132 132 132 1)
 		)
 		(uuid "7d6904a7-352f-46de-a4e2-26e82a163442")
+	)
+	(wire
+		(pts
+			(xy 179.07 124.46) (xy 181.61 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "855767bd-898a-4cb8-bf9b-ee81d3d663bd")
 	)
 	(wire
 		(pts
@@ -4265,7 +4295,7 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 124.46) (xy 203.2 127)
+			(xy 236.22 124.46) (xy 236.22 127)
 		)
 		(stroke
 			(width 0)
@@ -4295,7 +4325,7 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 132.08) (xy 203.2 134.62)
+			(xy 236.22 132.08) (xy 236.22 134.62)
 		)
 		(stroke
 			(width 0)
@@ -4315,7 +4345,7 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 139.7) (xy 203.2 142.24)
+			(xy 236.22 139.7) (xy 236.22 142.24)
 		)
 		(stroke
 			(width 0)
@@ -4352,6 +4382,16 @@
 			(type default)
 		)
 		(uuid "a953cbeb-738d-4028-ae07-68c9380f5d58")
+	)
+	(wire
+		(pts
+			(xy 180.34 57.15) (xy 190.5 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a9d82bf6-7f8c-43e2-92ba-d57937e53428")
 	)
 	(wire
 		(pts
@@ -4683,6 +4723,36 @@
 		)
 		(uuid "fce7aee0-309e-443e-a97e-996b1b99d1cd")
 	)
+	(label "CHARGED"
+		(at 226.06 69.85 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "08ab7e0c-f226-4238-bd9b-d61e5813a714")
+	)
+	(label "CHARGING_POWER_GOOD"
+		(at 226.06 72.39 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "960de5d5-1374-4687-bd72-594de50c34db")
+	)
+	(label "CHARGING"
+		(at 226.06 64.77 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a304a9fb-cb0b-4bc7-9b36-e43332e852e9")
+	)
 	(label "VBUS"
 		(at 86.36 46.99 180)
 		(effects
@@ -4692,6 +4762,40 @@
 			(justify right bottom)
 		)
 		(uuid "adb967fb-7801-49cf-8f53-f31363fac675")
+	)
+	(label "+5V_USB"
+		(at 180.34 57.15 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d71e5270-ac54-4d22-9bb7-334a38ceaf6f")
+	)
+	(global_label "USB_DN"
+		(shape input)
+		(at 181.61 121.92 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 0.762 0.762)
+			)
+			(justify left)
+		)
+		(uuid "12453fb5-5c10-4e03-83ea-4ebf1cb8edd8")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 187.8283 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 	)
 	(global_label "USB_DN"
 		(shape input)
@@ -4789,6 +4893,30 @@
 			)
 		)
 	)
+	(global_label "VBUS"
+		(shape input)
+		(at 181.61 127 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 0.762 0.762)
+			)
+			(justify left)
+		)
+		(uuid "76763caa-9eb3-4a86-851a-170216eedd64")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 186.3405 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
 	(global_label "USB_DP"
 		(shape input)
 		(at 81.28 52.07 0)
@@ -4826,6 +4954,30 @@
 		(uuid "cb6df563-202a-4ef3-8ae7-5d3ba5a8135d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 87.4983 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "USB_DP"
+		(shape input)
+		(at 181.61 124.46 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 0.762 0.762)
+			)
+			(justify left)
+		)
+		(uuid "d0cbf15e-4207-4f3d-82b2-74868d8b5fdf")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 187.792 124.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6950,7 +7102,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 203.2 124.46 0)
+		(at 236.22 124.46 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6960,7 +7112,7 @@
 		(dnp no)
 		(uuid "85afee69-d81c-4450-9eac-e4cecb1d0554")
 		(property "Reference" "#PWR029"
-			(at 203.2 128.27 0)
+			(at 236.22 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6971,7 +7123,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 203.2 120.904 0)
+			(at 236.22 120.904 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6981,7 +7133,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 203.2 124.46 0)
+			(at 236.22 124.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6992,7 +7144,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 203.2 124.46 0)
+			(at 236.22 124.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7003,7 +7155,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 203.2 124.46 0)
+			(at 236.22 124.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7204,7 +7356,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "LED"
+		(property "Value" "GREEN"
 			(at 244.348 55.118 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7297,7 +7449,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "LED"
+		(property "Value" "BLUE"
 			(at 251.968 55.118 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7446,7 +7598,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED_Small_Filled")
-		(at 203.2 129.54 270)
+		(at 236.22 129.54 270)
 		(mirror x)
 		(unit 1)
 		(body_style 1)
@@ -7457,7 +7609,7 @@
 		(dnp no)
 		(uuid "99b82472-232a-415f-88b0-0f8dbc9a06df")
 		(property "Reference" "D4"
-			(at 205.994 130.81 0)
+			(at 239.014 130.81 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7468,7 +7620,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 201.168 131.318 0)
+			(at 234.188 131.318 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7479,7 +7631,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 203.2 129.54 90)
+			(at 236.22 129.54 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7490,7 +7642,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 203.2 129.54 90)
+			(at 236.22 129.54 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7501,7 +7653,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode, small symbol, filled shape"
-			(at 203.2 129.54 0)
+			(at 236.22 129.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7512,7 +7664,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 203.2 129.54 0)
+			(at 236.22 129.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7619,7 +7771,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 203.2 142.24 0)
+		(at 236.22 142.24 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7629,7 +7781,7 @@
 		(dnp no)
 		(uuid "9c55e07f-4de5-41a8-8620-2a82a57f29a5")
 		(property "Reference" "#PWR028"
-			(at 203.2 148.59 0)
+			(at 236.22 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7640,7 +7792,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 203.2 146.05 0)
+			(at 236.22 146.05 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7650,7 +7802,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 203.2 142.24 0)
+			(at 236.22 142.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7661,7 +7813,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 203.2 142.24 0)
+			(at 236.22 142.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7672,7 +7824,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 203.2 142.24 0)
+			(at 236.22 142.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8450,7 +8602,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small_US")
-		(at 203.2 137.16 0)
+		(at 236.22 137.16 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -8461,7 +8613,7 @@
 		(dnp no)
 		(uuid "bd94410d-0eba-415d-909d-632f521d7cd2")
 		(property "Reference" "R10"
-			(at 205.232 137.16 90)
+			(at 238.252 137.16 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8471,7 +8623,7 @@
 			)
 		)
 		(property "Value" "470"
-			(at 201.168 137.16 90)
+			(at 234.188 137.16 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8481,7 +8633,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 203.2 137.16 0)
+			(at 236.22 137.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8492,7 +8644,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 203.2 137.16 0)
+			(at 236.22 137.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8503,7 +8655,7 @@
 			)
 		)
 		(property "Description" "Resistor, small US symbol"
-			(at 203.2 137.16 0)
+			(at 236.22 137.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9178,7 +9330,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "LED"
+		(property "Value" "RED"
 			(at 236.728 55.118 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9775,6 +9927,82 @@
 				(path "/4d6416dd-6dda-4bf0-a044-4f3ba51958a9"
 					(reference "C2")
 					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet
+		(at 138.43 113.03)
+		(size 40.64 45.72)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 194 194 1)
+		)
+		(uuid "05b5a033-e990-42f5-b598-8b18f69ca2d5")
+		(property "Sheetname" "ESP32-C3-02"
+			(at 138.43 112.3184 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "esp32-c3-02.kicad_sch"
+			(at 138.43 159.3346 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "USB_DN" input
+			(at 179.07 121.92 0)
+			(uuid "1419269c-c1d4-4835-8f10-310182cc191a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "USB_DP" input
+			(at 179.07 124.46 0)
+			(uuid "eb127ecc-f1dd-4d40-9cc3-157dd604cbf0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "VBUS" input
+			(at 179.07 127 0)
+			(uuid "cb858af2-6c72-4261-933f-c9106b11759e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "esp32-multisensor-pcb"
+				(path "/4d6416dd-6dda-4bf0-a044-4f3ba51958a9"
+					(page "2")
 				)
 			)
 		)

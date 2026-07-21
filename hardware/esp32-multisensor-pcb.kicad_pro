@@ -416,13 +416,17 @@
         "uuid": "4d6416dd-6dda-4bf0-a044-4f3ba51958a9"
       }
     ],
-    "used_designators": "D4,#PWR13-29,C2-6,R10",
+    "used_designators": "R11-15,J3,U1,U3-5,D5-6,#PWR30-39,C7-9",
     "variants": []
   },
   "sheets": [
     [
       "4d6416dd-6dda-4bf0-a044-4f3ba51958a9",
       "esp32-multisensor-pcb"
+    ],
+    [
+      "05b5a033-e990-42f5-b598-8b18f69ca2d5",
+      "ESP32-C3-02"
     ]
   ],
   "text_variables": {},
